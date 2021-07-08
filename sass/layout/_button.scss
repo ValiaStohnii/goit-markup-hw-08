@@ -72,6 +72,10 @@
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+
+  @media screen and (max-width: 1199px) {
+    margin-top: 20px;
+  }
 }
 .footer__icon {
   width: 24px;

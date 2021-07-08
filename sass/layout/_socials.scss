@@ -2,7 +2,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 16px;
+  margin-top: 20px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 16px;
+  }
 }
 
 .socials__item {

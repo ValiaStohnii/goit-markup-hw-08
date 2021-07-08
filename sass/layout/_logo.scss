@@ -17,6 +17,11 @@
 .footer .logo {
   padding: 0;
   margin-bottom: 20px;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 .footer__logo {
   color: var(--body-background-color);
