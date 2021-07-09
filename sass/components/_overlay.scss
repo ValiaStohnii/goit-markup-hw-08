@@ -1,18 +1,39 @@
 .overlay {
   max-width: 1600px;
+  height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     )
-    url(../images/hero.jpg);
+    url(../images/hero1x-min.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
-  @media screen and (min-width: 1200px) {
-    height: 600px;
+  @media (min-device-pixel-ratio: 2) and (min-width: 480px),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url(../images/hero2x-min.jpg);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 768px),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url(../images/hero2x-min.jpg);
+    }
+  }
+
+  @media (min-device-pixel-ratio: 2) and (min-width: 1200px),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .overlay {
+      background-image: url(../images/hero2x-min.jpg);
+    }
   }
 }
