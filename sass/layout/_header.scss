@@ -81,12 +81,12 @@
 }
 
 .mobile {
-  position: absolute;
+  position: fixed;
   background-color: #fff;
   top: 0;
   width: 100vw;
   height: 100vh;
-
+  z-index: 999;
   &.is-hidden {
     opacity: 0;
     pointer-events: none;

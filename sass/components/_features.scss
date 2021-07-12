@@ -12,7 +12,6 @@
   font-size: 14px;
   line-height: 1.71;
   margin-top: 0;
-  margin-top: -30px;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -25,6 +24,12 @@
 .features__item {
   width: 100%;
   margin-top: 30px;
+
+  @media screen and (max-width: 768px) {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
 
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
